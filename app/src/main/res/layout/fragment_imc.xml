@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.fellipe.calculators.fragments.IMCFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexo"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rgSexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbMasculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:layout_weight="0.5"/>
+
+                <RadioButton
+                    android:id="@+id/rbFeminino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino"
+                    android:layout_weight="0.5"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medidas"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/edAltura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="altura(m)"
+                android:layout_weight="0.5"/>
+
+            <EditText
+                android:id="@+id/edPeso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="peso(kg)"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvImc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seu IMC é: "
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/tvResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="18"
+                android:textSize="25sp"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/tvImcIdeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="O IMC ideal para você é: "
+                android:textSize="20sp"
+                android:gravity="center"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/tvResultadoIdeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="18"
+                android:textSize="20sp"
+                android:layout_weight="0.5"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
